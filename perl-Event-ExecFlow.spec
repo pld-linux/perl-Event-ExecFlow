@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Event
 %define		pnam	Event-ExecFlow
-Summary:	Event-ExecFlow - High level API for event-based execution flow control
+Summary:	Event::ExecFlow - High level API for event-based execution flow control
+Summary(pl):	Event::ExecFlow - wysokopoziomowe API do opartego na zdarzeniach sterowania wykonywaniem
 Name:		perl-Event-ExecFlow
 Version:	0.62
 Release:	1
@@ -14,13 +15,19 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	e76d36b1e098674907980200aabf2522
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Event-ExecFlow/
 BuildRequires:	perl-AnyEvent
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 High level API for event-based execution flow control.
+
+%description -l pl
+Wysokopoziomowe API do opartego na zdarzeniach sterowania przep³ywem
+wykonywania kodu.
 
 %prep
 %setup -q -n %{pnam}-%{version}
@@ -28,8 +35,7 @@ High level API for event-based execution flow control.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} \
-	OPTIMIZE="%{rpmcflags}"
+%{__make}
 
 %{?with_tests:%{__make} test}
 
