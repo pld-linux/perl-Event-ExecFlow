@@ -6,7 +6,7 @@
 %define		pdir	Event
 %define		pnam	Event-ExecFlow
 Summary:	Event::ExecFlow - High level API for event-based execution flow control
-Summary(pl):	Event::ExecFlow - wysokopoziomowe API do opartego na zdarzeniach sterowania wykonywaniem
+Summary(pl.UTF-8):   Event::ExecFlow - wysokopoziomowe API do opartego na zdarzeniach sterowania wykonywaniem
 Name:		perl-Event-ExecFlow
 Version:	0.62
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 High level API for event-based execution flow control.
 
-%description -l pl
-Wysokopoziomowe API do opartego na zdarzeniach sterowania przep≥ywem
+%description -l pl.UTF-8
+Wysokopoziomowe API do opartego na zdarzeniach sterowania przep≈Çywem
 wykonywania kodu.
 
 %prep
