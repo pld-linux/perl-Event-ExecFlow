@@ -8,13 +8,13 @@
 Summary:	Event::ExecFlow - High level API for event-based execution flow control
 Summary(pl.UTF-8):	Event::ExecFlow - wysokopoziomowe API do opartego na zdarzeniach sterowania wykonywaniem
 Name:		perl-Event-ExecFlow
-Version:	0.62
+Version:	0.63
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	e76d36b1e098674907980200aabf2522
+# Source0-md5:	79116732b550701a3436a448581e01da
 URL:		http://search.cpan.org/dist/Event-ExecFlow/
 BuildRequires:	perl-AnyEvent
 BuildRequires:	perl-devel >= 1:5.8.0
